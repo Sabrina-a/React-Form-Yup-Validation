@@ -33,10 +33,10 @@ export default function Login(){
             <form onSubmit={handleSubmit(onSubmit)} >
           
                 <input type='text' name="email" placeholder="Email" {...register("email")} />
-              
+                <p>{errors.email?.message}</p>
         
                 <input type='text' name='password' placeholder="Password" {...register("password")}  />
- 
+                <p>{errors.password?.message}</p>
 
                 
                 <input type="submit" id="submit" value="Login"/>

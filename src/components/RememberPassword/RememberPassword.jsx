@@ -25,7 +25,7 @@ export default function Login(){
             <form  onSubmit={handleSubmit(onSubmit)}>
           
                 <input type='text' name="email" placeholder="Email"  {...register("email")}  />
-                <p>{errors.firstName?.type ==="required" && "First Name is Required"}</p>
+                <p>{errors.email?.message}</p>
         
          
                 <input type="submit" id="submit" value="Send"/>
